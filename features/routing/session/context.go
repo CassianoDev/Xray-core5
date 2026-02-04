@@ -3,9 +3,9 @@ package session
 import (
 	"context"
 
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/features/routing"
+	"github.com/CassianoDev/Xray-core5/common/net"
+	"github.com/CassianoDev/Xray-core5/common/session"
+	"github.com/CassianoDev/Xray-core5/features/routing"
 )
 
 // Context is an implementation of routing.Context, which is a wrapper of context.context with session info.

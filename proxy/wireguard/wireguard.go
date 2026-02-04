@@ -7,8 +7,8 @@ import (
 	"net/netip"
 	"strings"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/log"
+	"github.com/CassianoDev/Xray-core5/common"
+	"github.com/CassianoDev/Xray-core5/common/log"
 	"golang.zx2c4.com/wireguard/device"
 )
 

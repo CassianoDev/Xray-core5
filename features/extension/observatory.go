@@ -3,7 +3,7 @@ package extension
 import (
 	"context"
 
-	"github.com/xtls/xray-core/features"
+	"github.com/CassianoDev/Xray-core5/features"
 	"google.golang.org/protobuf/proto"
 )
 

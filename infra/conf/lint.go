@@ -1,6 +1,6 @@
 package conf
 
-import "github.com/xtls/xray-core/common/errors"
+import "github.com/CassianoDev/Xray-core5/common/errors"
 
 type ConfigureFilePostProcessingStage interface {
 	Process(conf *Config) error

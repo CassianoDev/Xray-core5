@@ -9,9 +9,9 @@ import (
 	sync "sync"
 	"time"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/crypto"
-	"github.com/xtls/xray-core/common/errors"
+	"github.com/CassianoDev/Xray-core5/common"
+	"github.com/CassianoDev/Xray-core5/common/crypto"
+	"github.com/CassianoDev/Xray-core5/common/errors"
 )
 
 type aes128gcmConn struct {

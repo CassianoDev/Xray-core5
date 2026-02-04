@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/xtls/xray-core/transport/internet/finalmask/mkcp/original"
+	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask/mkcp/original"
 )
 
 func TestOriginalBounce(t *testing.T) {

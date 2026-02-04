@@ -1,8 +1,8 @@
 package conf
 
 import (
-	"github.com/xtls/xray-core/app/metrics"
-	"github.com/xtls/xray-core/common/errors"
+	"github.com/CassianoDev/Xray-core5/app/metrics"
+	"github.com/CassianoDev/Xray-core5/common/errors"
 )
 
 type MetricsConfig struct {

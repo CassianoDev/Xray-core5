@@ -8,17 +8,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xtls/xray-core/app/policy"
-	"github.com/xtls/xray-core/app/proxyman"
-	. "github.com/xtls/xray-core/app/proxyman/outbound"
-	"github.com/xtls/xray-core/app/stats"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/serial"
-	"github.com/xtls/xray-core/common/session"
-	core "github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/features/outbound"
-	"github.com/xtls/xray-core/proxy/freedom"
-	"github.com/xtls/xray-core/transport/internet/stat"
+	"github.com/CassianoDev/Xray-core5/app/policy"
+	"github.com/CassianoDev/Xray-core5/app/proxyman"
+	. "github.com/CassianoDev/Xray-core5/app/proxyman/outbound"
+	"github.com/CassianoDev/Xray-core5/app/stats"
+	"github.com/CassianoDev/Xray-core5/common/net"
+	"github.com/CassianoDev/Xray-core5/common/serial"
+	"github.com/CassianoDev/Xray-core5/common/session"
+	core "github.com/CassianoDev/Xray-core5/core"
+	"github.com/CassianoDev/Xray-core5/features/outbound"
+	"github.com/CassianoDev/Xray-core5/proxy/freedom"
+	"github.com/CassianoDev/Xray-core5/transport/internet/stat"
 )
 
 func TestInterfaces(t *testing.T) {

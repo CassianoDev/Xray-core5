@@ -5,14 +5,14 @@ import (
 
 	"sync"
 
-	"github.com/xtls/xray-core/app/observatory"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/common/signal/done"
-	"github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/features/extension"
-	"github.com/xtls/xray-core/features/outbound"
-	"github.com/xtls/xray-core/features/routing"
+	"github.com/CassianoDev/Xray-core5/app/observatory"
+	"github.com/CassianoDev/Xray-core5/common"
+	"github.com/CassianoDev/Xray-core5/common/errors"
+	"github.com/CassianoDev/Xray-core5/common/signal/done"
+	"github.com/CassianoDev/Xray-core5/core"
+	"github.com/CassianoDev/Xray-core5/features/extension"
+	"github.com/CassianoDev/Xray-core5/features/outbound"
+	"github.com/CassianoDev/Xray-core5/features/routing"
 	"google.golang.org/protobuf/proto"
 )
 

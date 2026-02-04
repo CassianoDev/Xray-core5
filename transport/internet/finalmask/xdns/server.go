@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/xtls/xray-core/common/errors"
+	"github.com/CassianoDev/Xray-core5/common/errors"
 )
 
 const (

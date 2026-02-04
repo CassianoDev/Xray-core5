@@ -5,17 +5,17 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/dice"
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/net/cnc"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/features/dns"
-	"github.com/xtls/xray-core/features/outbound"
-	"github.com/xtls/xray-core/transport"
-	"github.com/xtls/xray-core/transport/internet/stat"
-	"github.com/xtls/xray-core/transport/pipe"
+	"github.com/CassianoDev/Xray-core5/common"
+	"github.com/CassianoDev/Xray-core5/common/dice"
+	"github.com/CassianoDev/Xray-core5/common/errors"
+	"github.com/CassianoDev/Xray-core5/common/net"
+	"github.com/CassianoDev/Xray-core5/common/net/cnc"
+	"github.com/CassianoDev/Xray-core5/common/session"
+	"github.com/CassianoDev/Xray-core5/features/dns"
+	"github.com/CassianoDev/Xray-core5/features/outbound"
+	"github.com/CassianoDev/Xray-core5/transport"
+	"github.com/CassianoDev/Xray-core5/transport/internet/stat"
+	"github.com/CassianoDev/Xray-core5/transport/pipe"
 )
 
 // Dialer is the interface for dialing outbound connections.

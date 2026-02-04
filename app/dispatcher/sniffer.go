@@ -3,14 +3,14 @@ package dispatcher
 import (
 	"context"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/common/protocol/bittorrent"
-	"github.com/xtls/xray-core/common/protocol/http"
-	"github.com/xtls/xray-core/common/protocol/quic"
-	"github.com/xtls/xray-core/common/protocol/tls"
+	"github.com/CassianoDev/Xray-core5/common"
+	"github.com/CassianoDev/Xray-core5/common/errors"
+	"github.com/CassianoDev/Xray-core5/common/net"
+	"github.com/CassianoDev/Xray-core5/common/protocol"
+	"github.com/CassianoDev/Xray-core5/common/protocol/bittorrent"
+	"github.com/CassianoDev/Xray-core5/common/protocol/http"
+	"github.com/CassianoDev/Xray-core5/common/protocol/quic"
+	"github.com/CassianoDev/Xray-core5/common/protocol/tls"
 )
 
 type SniffResult interface {

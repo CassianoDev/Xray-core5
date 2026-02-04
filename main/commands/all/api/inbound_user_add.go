@@ -4,21 +4,21 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/xtls/xray-core/common/protocol"
+	"github.com/CassianoDev/Xray-core5/common/protocol"
 
-	handlerService "github.com/xtls/xray-core/app/proxyman/command"
-	cserial "github.com/xtls/xray-core/common/serial"
+	handlerService "github.com/CassianoDev/Xray-core5/app/proxyman/command"
+	cserial "github.com/CassianoDev/Xray-core5/common/serial"
 
-	"github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/infra/conf"
-	"github.com/xtls/xray-core/infra/conf/serial"
-	"github.com/xtls/xray-core/proxy/shadowsocks"
-	"github.com/xtls/xray-core/proxy/shadowsocks_2022"
-	"github.com/xtls/xray-core/proxy/trojan"
-	vlessin "github.com/xtls/xray-core/proxy/vless/inbound"
-	vmessin "github.com/xtls/xray-core/proxy/vmess/inbound"
+	"github.com/CassianoDev/Xray-core5/core"
+	"github.com/CassianoDev/Xray-core5/infra/conf"
+	"github.com/CassianoDev/Xray-core5/infra/conf/serial"
+	"github.com/CassianoDev/Xray-core5/proxy/shadowsocks"
+	"github.com/CassianoDev/Xray-core5/proxy/shadowsocks_2022"
+	"github.com/CassianoDev/Xray-core5/proxy/trojan"
+	vlessin "github.com/CassianoDev/Xray-core5/proxy/vless/inbound"
+	vmessin "github.com/CassianoDev/Xray-core5/proxy/vmess/inbound"
 
-	"github.com/xtls/xray-core/main/commands/base"
+	"github.com/CassianoDev/Xray-core5/main/commands/base"
 )
 
 var cmdAddInboundUsers = &base.Command{

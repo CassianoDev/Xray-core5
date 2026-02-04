@@ -1,7 +1,6 @@
 package conf
 
 import (
-	"context"
 	"encoding/base64"
 	"encoding/hex"
 	"encoding/json"
@@ -11,32 +10,31 @@ import (
 	"strconv"
 	"strings"
 	"syscall"
-	"time"
 
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/platform/filesystem"
-	"github.com/xtls/xray-core/common/serial"
-	"github.com/xtls/xray-core/transport/internet"
-	"github.com/xtls/xray-core/transport/internet/finalmask/header/dns"
-	"github.com/xtls/xray-core/transport/internet/finalmask/header/dtls"
-	"github.com/xtls/xray-core/transport/internet/finalmask/header/srtp"
-	"github.com/xtls/xray-core/transport/internet/finalmask/header/utp"
-	"github.com/xtls/xray-core/transport/internet/finalmask/header/wechat"
-	"github.com/xtls/xray-core/transport/internet/finalmask/header/wireguard"
-	"github.com/xtls/xray-core/transport/internet/finalmask/mkcp/aes128gcm"
-	"github.com/xtls/xray-core/transport/internet/finalmask/mkcp/original"
-	"github.com/xtls/xray-core/transport/internet/finalmask/salamander"
-	"github.com/xtls/xray-core/transport/internet/finalmask/xdns"
-	"github.com/xtls/xray-core/transport/internet/finalmask/xicmp"
-	"github.com/xtls/xray-core/transport/internet/httpupgrade"
-	"github.com/xtls/xray-core/transport/internet/hysteria"
-	"github.com/xtls/xray-core/transport/internet/kcp"
-	"github.com/xtls/xray-core/transport/internet/reality"
-	"github.com/xtls/xray-core/transport/internet/splithttp"
-	"github.com/xtls/xray-core/transport/internet/tcp"
-	"github.com/xtls/xray-core/transport/internet/tls"
-	"github.com/xtls/xray-core/transport/internet/websocket"
+	"github.com/CassianoDev/Xray-core5/common/errors"
+	"github.com/CassianoDev/Xray-core5/common/net"
+	"github.com/CassianoDev/Xray-core5/common/platform/filesystem"
+	"github.com/CassianoDev/Xray-core5/common/serial"
+	"github.com/CassianoDev/Xray-core5/transport/internet"
+	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask/header/dns"
+	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask/header/dtls"
+	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask/header/srtp"
+	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask/header/utp"
+	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask/header/wechat"
+	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask/header/wireguard"
+	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask/mkcp/aes128gcm"
+	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask/mkcp/original"
+	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask/salamander"
+	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask/xdns"
+	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask/xicmp"
+	"github.com/CassianoDev/Xray-core5/transport/internet/httpupgrade"
+	"github.com/CassianoDev/Xray-core5/transport/internet/hysteria"
+	"github.com/CassianoDev/Xray-core5/transport/internet/kcp"
+	"github.com/CassianoDev/Xray-core5/transport/internet/reality"
+	"github.com/CassianoDev/Xray-core5/transport/internet/splithttp"
+	"github.com/CassianoDev/Xray-core5/transport/internet/tcp"
+	"github.com/CassianoDev/Xray-core5/transport/internet/tls"
+	"github.com/CassianoDev/Xray-core5/transport/internet/websocket"
 	"google.golang.org/protobuf/proto"
 )
 
@@ -749,12 +747,7 @@ func (c *TLSConfig) Build() (proto.Message, error) {
 	config.MasterKeyLog = c.MasterKeyLog
 
 	if c.AllowInsecure {
-		if time.Now().After(time.Date(2026, 6, 1, 0, 0, 0, 0, time.UTC)) {
-			return nil, errors.PrintRemovedFeatureError(`"allowInsecure"`, `"pinnedPeerCertSha256"`)
-		} else {
-			errors.LogWarning(context.Background(), `"allowInsecure" will be removed automatically after 2026-06-01, please use "pinnedPeerCertSha256"(pcs) and "verifyPeerCertByName"(vcn) instead, PLEASE CONTACT YOUR SERVICE PROVIDER (AIRPORT)`)
-			config.AllowInsecure = true
-		}
+		config.AllowInsecure = true
 	}
 	if c.PinnedPeerCertSha256 != "" {
 		for v := range strings.SplitSeq(c.PinnedPeerCertSha256, ",") {

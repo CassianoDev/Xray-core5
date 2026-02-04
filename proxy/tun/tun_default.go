@@ -3,7 +3,7 @@
 package tun
 
 import (
-	"github.com/xtls/xray-core/common/errors"
+	"github.com/CassianoDev/Xray-core5/common/errors"
 	"gvisor.dev/gvisor/pkg/tcpip/stack"
 )
 
