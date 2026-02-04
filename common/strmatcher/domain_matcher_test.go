@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	. "github.com/CassianoDev/Xray-core5/common/strmatcher"
+	. "github.com/xtls/xray-core/common/strmatcher"
 )
 
 func TestDomainMatcherGroup(t *testing.T) {

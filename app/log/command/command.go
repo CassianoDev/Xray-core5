@@ -3,10 +3,10 @@ package command
 import (
 	"context"
 
-	"github.com/CassianoDev/Xray-core5/app/log"
-	"github.com/CassianoDev/Xray-core5/common"
-	"github.com/CassianoDev/Xray-core5/common/errors"
-	"github.com/CassianoDev/Xray-core5/core"
+	"github.com/xtls/xray-core/app/log"
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/common/errors"
+	"github.com/xtls/xray-core/core"
 	grpc "google.golang.org/grpc"
 )
 

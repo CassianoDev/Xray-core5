@@ -1,8 +1,8 @@
 package encoding
 
 import (
-	"github.com/CassianoDev/Xray-core5/common/net"
-	"github.com/CassianoDev/Xray-core5/common/protocol"
+	"github.com/xtls/xray-core/common/net"
+	"github.com/xtls/xray-core/common/protocol"
 )
 
 const (

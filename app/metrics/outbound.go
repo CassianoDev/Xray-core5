@@ -4,13 +4,13 @@ import (
 	"context"
 	"sync"
 
-	"github.com/CassianoDev/Xray-core5/common"
-	"github.com/CassianoDev/Xray-core5/common/errors"
-	"github.com/CassianoDev/Xray-core5/common/net"
-	"github.com/CassianoDev/Xray-core5/common/net/cnc"
-	"github.com/CassianoDev/Xray-core5/common/serial"
-	"github.com/CassianoDev/Xray-core5/common/signal/done"
-	"github.com/CassianoDev/Xray-core5/transport"
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/common/errors"
+	"github.com/xtls/xray-core/common/net"
+	"github.com/xtls/xray-core/common/net/cnc"
+	"github.com/xtls/xray-core/common/serial"
+	"github.com/xtls/xray-core/common/signal/done"
+	"github.com/xtls/xray-core/transport"
 )
 
 // OutboundListener is a net.Listener for listening metrics http connections.

@@ -3,7 +3,7 @@ package mux_test
 import (
 	"testing"
 
-	. "github.com/CassianoDev/Xray-core5/common/mux"
+	. "github.com/xtls/xray-core/common/mux"
 )
 
 func TestSessionManagerAdd(t *testing.T) {

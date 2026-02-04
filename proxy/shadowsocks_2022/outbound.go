@@ -11,14 +11,14 @@ import (
 	"github.com/sagernet/sing/common/bufio"
 	N "github.com/sagernet/sing/common/network"
 	"github.com/sagernet/sing/common/uot"
-	"github.com/CassianoDev/Xray-core5/common"
-	"github.com/CassianoDev/Xray-core5/common/buf"
-	"github.com/CassianoDev/Xray-core5/common/errors"
-	"github.com/CassianoDev/Xray-core5/common/net"
-	"github.com/CassianoDev/Xray-core5/common/session"
-	"github.com/CassianoDev/Xray-core5/common/singbridge"
-	"github.com/CassianoDev/Xray-core5/transport"
-	"github.com/CassianoDev/Xray-core5/transport/internet"
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/common/buf"
+	"github.com/xtls/xray-core/common/errors"
+	"github.com/xtls/xray-core/common/net"
+	"github.com/xtls/xray-core/common/session"
+	"github.com/xtls/xray-core/common/singbridge"
+	"github.com/xtls/xray-core/transport"
+	"github.com/xtls/xray-core/transport/internet"
 )
 
 func init() {

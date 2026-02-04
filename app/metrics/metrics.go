@@ -7,16 +7,16 @@ import (
 	_ "net/http/pprof"
 	"strings"
 
-	"github.com/CassianoDev/Xray-core5/app/observatory"
-	"github.com/CassianoDev/Xray-core5/app/stats"
-	"github.com/CassianoDev/Xray-core5/common"
-	"github.com/CassianoDev/Xray-core5/common/errors"
-	"github.com/CassianoDev/Xray-core5/common/net"
-	"github.com/CassianoDev/Xray-core5/common/signal/done"
-	"github.com/CassianoDev/Xray-core5/core"
-	"github.com/CassianoDev/Xray-core5/features/extension"
-	"github.com/CassianoDev/Xray-core5/features/outbound"
-	feature_stats "github.com/CassianoDev/Xray-core5/features/stats"
+	"github.com/xtls/xray-core/app/observatory"
+	"github.com/xtls/xray-core/app/stats"
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/common/errors"
+	"github.com/xtls/xray-core/common/net"
+	"github.com/xtls/xray-core/common/signal/done"
+	"github.com/xtls/xray-core/core"
+	"github.com/xtls/xray-core/features/extension"
+	"github.com/xtls/xray-core/features/outbound"
+	feature_stats "github.com/xtls/xray-core/features/stats"
 )
 
 type MetricsHandler struct {

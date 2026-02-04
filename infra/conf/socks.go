@@ -3,10 +3,10 @@ package conf
 import (
 	"encoding/json"
 
-	"github.com/CassianoDev/Xray-core5/common/errors"
-	"github.com/CassianoDev/Xray-core5/common/protocol"
-	"github.com/CassianoDev/Xray-core5/common/serial"
-	"github.com/CassianoDev/Xray-core5/proxy/socks"
+	"github.com/xtls/xray-core/common/errors"
+	"github.com/xtls/xray-core/common/protocol"
+	"github.com/xtls/xray-core/common/serial"
+	"github.com/xtls/xray-core/proxy/socks"
 	"google.golang.org/protobuf/proto"
 )
 

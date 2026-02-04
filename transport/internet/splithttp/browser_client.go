@@ -4,10 +4,10 @@ import (
 	"context"
 	"io"
 
-	"github.com/CassianoDev/Xray-core5/common/errors"
-	"github.com/CassianoDev/Xray-core5/common/net"
-	"github.com/CassianoDev/Xray-core5/transport/internet/browser_dialer"
-	"github.com/CassianoDev/Xray-core5/transport/internet/websocket"
+	"github.com/xtls/xray-core/common/errors"
+	"github.com/xtls/xray-core/common/net"
+	"github.com/xtls/xray-core/transport/internet/browser_dialer"
+	"github.com/xtls/xray-core/transport/internet/websocket"
 )
 
 // BrowserDialerClient implements splithttp.DialerClient in terms of browser dialer

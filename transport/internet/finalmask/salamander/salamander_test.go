@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask/salamander"
+	"github.com/xtls/xray-core/transport/internet/finalmask/salamander"
 )
 
 const (

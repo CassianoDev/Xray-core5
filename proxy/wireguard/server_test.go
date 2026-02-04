@@ -6,8 +6,8 @@ import (
 	"runtime/debug"
 	"testing"
 
-	"github.com/CassianoDev/Xray-core5/core"
-	"github.com/CassianoDev/Xray-core5/proxy/wireguard"
+	"github.com/xtls/xray-core/core"
+	"github.com/xtls/xray-core/proxy/wireguard"
 )
 
 // TestWireGuardServerInitializationError verifies that an error during TUN initialization

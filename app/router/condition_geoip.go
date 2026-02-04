@@ -7,8 +7,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/CassianoDev/Xray-core5/common/errors"
-	"github.com/CassianoDev/Xray-core5/common/net"
+	"github.com/xtls/xray-core/common/errors"
+	"github.com/xtls/xray-core/common/net"
 
 	"go4.org/netipx"
 )

@@ -9,14 +9,14 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/CassianoDev/Xray-core5/common/errors"
-	"github.com/CassianoDev/Xray-core5/common/net"
-	"github.com/CassianoDev/Xray-core5/common/protocol"
-	"github.com/CassianoDev/Xray-core5/common/serial"
-	"github.com/CassianoDev/Xray-core5/common/uuid"
-	"github.com/CassianoDev/Xray-core5/proxy/vless"
-	"github.com/CassianoDev/Xray-core5/proxy/vless/inbound"
-	"github.com/CassianoDev/Xray-core5/proxy/vless/outbound"
+	"github.com/xtls/xray-core/common/errors"
+	"github.com/xtls/xray-core/common/net"
+	"github.com/xtls/xray-core/common/protocol"
+	"github.com/xtls/xray-core/common/serial"
+	"github.com/xtls/xray-core/common/uuid"
+	"github.com/xtls/xray-core/proxy/vless"
+	"github.com/xtls/xray-core/proxy/vless/inbound"
+	"github.com/xtls/xray-core/proxy/vless/outbound"
 	"google.golang.org/protobuf/proto"
 )
 

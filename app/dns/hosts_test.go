@@ -5,11 +5,11 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	. "github.com/CassianoDev/Xray-core5/app/dns"
-	"github.com/CassianoDev/Xray-core5/app/router"
-	"github.com/CassianoDev/Xray-core5/common"
-	"github.com/CassianoDev/Xray-core5/common/net"
-	"github.com/CassianoDev/Xray-core5/features/dns"
+	. "github.com/xtls/xray-core/app/dns"
+	"github.com/xtls/xray-core/app/router"
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/common/net"
+	"github.com/xtls/xray-core/features/dns"
 )
 
 func TestStaticHosts(t *testing.T) {

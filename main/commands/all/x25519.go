@@ -1,7 +1,7 @@
 package all
 
 import (
-	"github.com/CassianoDev/Xray-core5/main/commands/base"
+	"github.com/xtls/xray-core/main/commands/base"
 )
 
 var cmdX25519 = &base.Command{

@@ -7,7 +7,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/CassianoDev/Xray-core5/common"
+	"github.com/xtls/xray-core/common"
 )
 
 func TestECHDial(t *testing.T) {

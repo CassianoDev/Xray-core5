@@ -1,10 +1,10 @@
 package all
 
 import (
-	"github.com/CassianoDev/Xray-core5/main/commands/all/api"
-	"github.com/CassianoDev/Xray-core5/main/commands/all/convert"
-	"github.com/CassianoDev/Xray-core5/main/commands/all/tls"
-	"github.com/CassianoDev/Xray-core5/main/commands/base"
+	"github.com/xtls/xray-core/main/commands/all/api"
+	"github.com/xtls/xray-core/main/commands/all/convert"
+	"github.com/xtls/xray-core/main/commands/all/tls"
+	"github.com/xtls/xray-core/main/commands/base"
 )
 
 func init() {

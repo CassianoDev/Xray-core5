@@ -3,7 +3,7 @@ package signal_test
 import (
 	"testing"
 
-	. "github.com/CassianoDev/Xray-core5/common/signal"
+	. "github.com/xtls/xray-core/common/signal"
 )
 
 func TestNotifierSignal(t *testing.T) {

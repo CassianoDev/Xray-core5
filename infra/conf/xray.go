@@ -9,16 +9,16 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/CassianoDev/Xray-core5/app/dispatcher"
-	"github.com/CassianoDev/Xray-core5/app/proxyman"
-	"github.com/CassianoDev/Xray-core5/app/router"
-	"github.com/CassianoDev/Xray-core5/app/stats"
-	"github.com/CassianoDev/Xray-core5/common/errors"
-	"github.com/CassianoDev/Xray-core5/common/net"
-	"github.com/CassianoDev/Xray-core5/common/platform"
-	"github.com/CassianoDev/Xray-core5/common/serial"
-	core "github.com/CassianoDev/Xray-core5/core"
-	"github.com/CassianoDev/Xray-core5/transport/internet"
+	"github.com/xtls/xray-core/app/dispatcher"
+	"github.com/xtls/xray-core/app/proxyman"
+	"github.com/xtls/xray-core/app/router"
+	"github.com/xtls/xray-core/app/stats"
+	"github.com/xtls/xray-core/common/errors"
+	"github.com/xtls/xray-core/common/net"
+	"github.com/xtls/xray-core/common/platform"
+	"github.com/xtls/xray-core/common/serial"
+	core "github.com/xtls/xray-core/core"
+	"github.com/xtls/xray-core/transport/internet"
 )
 
 var (

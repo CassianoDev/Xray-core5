@@ -1,7 +1,7 @@
 package conf
 
 import (
-	"github.com/CassianoDev/Xray-core5/proxy/loopback"
+	"github.com/xtls/xray-core/proxy/loopback"
 	"google.golang.org/protobuf/proto"
 )
 

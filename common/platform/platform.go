@@ -1,4 +1,4 @@
-package platform // import "github.com/CassianoDev/Xray-core5/common/platform"
+package platform // import "github.com/xtls/xray-core/common/platform"
 
 import (
 	"os"

@@ -12,8 +12,8 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/CassianoDev/Xray-core5/common/buf"
-	"github.com/CassianoDev/Xray-core5/common/platform"
+	"github.com/xtls/xray-core/common/buf"
+	"github.com/xtls/xray-core/common/platform"
 	"golang.org/x/sys/unix"
 	"gvisor.dev/gvisor/pkg/buffer"
 	"gvisor.dev/gvisor/pkg/tcpip"

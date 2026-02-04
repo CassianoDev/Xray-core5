@@ -4,15 +4,15 @@ import (
 	"context"
 	"testing"
 
-	"github.com/CassianoDev/Xray-core5/app/dispatcher"
-	"github.com/CassianoDev/Xray-core5/app/log"
-	. "github.com/CassianoDev/Xray-core5/app/log/command"
-	"github.com/CassianoDev/Xray-core5/app/proxyman"
-	_ "github.com/CassianoDev/Xray-core5/app/proxyman/inbound"
-	_ "github.com/CassianoDev/Xray-core5/app/proxyman/outbound"
-	"github.com/CassianoDev/Xray-core5/common"
-	"github.com/CassianoDev/Xray-core5/common/serial"
-	"github.com/CassianoDev/Xray-core5/core"
+	"github.com/xtls/xray-core/app/dispatcher"
+	"github.com/xtls/xray-core/app/log"
+	. "github.com/xtls/xray-core/app/log/command"
+	"github.com/xtls/xray-core/app/proxyman"
+	_ "github.com/xtls/xray-core/app/proxyman/inbound"
+	_ "github.com/xtls/xray-core/app/proxyman/outbound"
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/common/serial"
+	"github.com/xtls/xray-core/core"
 )
 
 func TestLoggerRestart(t *testing.T) {

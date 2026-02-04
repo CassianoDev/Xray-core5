@@ -1,7 +1,7 @@
 package tls
 
 import (
-	"github.com/CassianoDev/Xray-core5/main/commands/base"
+	"github.com/xtls/xray-core/main/commands/base"
 )
 
 // CmdTLS holds all tls sub commands

@@ -7,8 +7,8 @@ import (
 	"io"
 	"syscall"
 
-	"github.com/CassianoDev/Xray-core5/common/platform"
-	"github.com/CassianoDev/Xray-core5/features/stats"
+	"github.com/xtls/xray-core/common/platform"
+	"github.com/xtls/xray-core/features/stats"
 )
 
 type allocStrategy struct {

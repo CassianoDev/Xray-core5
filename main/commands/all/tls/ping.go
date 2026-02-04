@@ -12,9 +12,9 @@ import (
 
 	utls "github.com/refraction-networking/utls"
 
-	"github.com/CassianoDev/Xray-core5/common/utils"
-	"github.com/CassianoDev/Xray-core5/main/commands/base"
-	. "github.com/CassianoDev/Xray-core5/transport/internet/tls"
+	"github.com/xtls/xray-core/common/utils"
+	"github.com/xtls/xray-core/main/commands/base"
+	. "github.com/xtls/xray-core/transport/internet/tls"
 )
 
 // cmdPing is the tls ping command

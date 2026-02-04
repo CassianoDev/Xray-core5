@@ -9,10 +9,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/CassianoDev/Xray-core5/common"
-	"github.com/CassianoDev/Xray-core5/common/buf"
-	"github.com/CassianoDev/Xray-core5/common/net"
-	. "github.com/CassianoDev/Xray-core5/transport/internet/headers/http"
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/common/buf"
+	"github.com/xtls/xray-core/common/net"
+	. "github.com/xtls/xray-core/transport/internet/headers/http"
 )
 
 func TestReaderWriter(t *testing.T) {

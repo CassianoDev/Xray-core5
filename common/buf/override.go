@@ -1,7 +1,7 @@
 package buf
 
 import (
-	"github.com/CassianoDev/Xray-core5/common/net"
+	"github.com/xtls/xray-core/common/net"
 )
 
 type EndpointOverrideReader struct {

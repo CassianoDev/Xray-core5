@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/CassianoDev/Xray-core5/core"
-	"github.com/CassianoDev/Xray-core5/main/commands/base"
+	"github.com/xtls/xray-core/core"
+	"github.com/xtls/xray-core/main/commands/base"
 )
 
 var cmdVersion = &base.Command{

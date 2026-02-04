@@ -3,9 +3,9 @@ package all
 import (
 	"os"
 
-	"github.com/CassianoDev/Xray-core5/common/platform"
-	"github.com/CassianoDev/Xray-core5/infra/conf/serial"
-	"github.com/CassianoDev/Xray-core5/main/commands/base"
+	"github.com/xtls/xray-core/common/platform"
+	"github.com/xtls/xray-core/infra/conf/serial"
+	"github.com/xtls/xray-core/main/commands/base"
 )
 
 var cmdBuildMphCache = &base.Command{

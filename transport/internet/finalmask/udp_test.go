@@ -6,15 +6,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask"
-	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask/header/dns"
-	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask/header/srtp"
-	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask/header/utp"
-	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask/header/wechat"
-	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask/header/wireguard"
-	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask/mkcp/aes128gcm"
-	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask/mkcp/original"
-	"github.com/CassianoDev/Xray-core5/transport/internet/finalmask/salamander"
+	"github.com/xtls/xray-core/transport/internet/finalmask"
+	"github.com/xtls/xray-core/transport/internet/finalmask/header/dns"
+	"github.com/xtls/xray-core/transport/internet/finalmask/header/srtp"
+	"github.com/xtls/xray-core/transport/internet/finalmask/header/utp"
+	"github.com/xtls/xray-core/transport/internet/finalmask/header/wechat"
+	"github.com/xtls/xray-core/transport/internet/finalmask/header/wireguard"
+	"github.com/xtls/xray-core/transport/internet/finalmask/mkcp/aes128gcm"
+	"github.com/xtls/xray-core/transport/internet/finalmask/mkcp/original"
+	"github.com/xtls/xray-core/transport/internet/finalmask/salamander"
 )
 
 func mustSendRecv(

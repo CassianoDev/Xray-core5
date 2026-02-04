@@ -7,7 +7,7 @@
 package hysteria
 
 import (
-	protocol "github.com/CassianoDev/Xray-core5/common/protocol"
+	protocol "github.com/xtls/xray-core/common/protocol"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -82,7 +82,7 @@ const file_proxy_hysteria_config_proto_rawDesc = "" +
 	"\fClientConfig\x12\x18\n" +
 	"\aversion\x18\x01 \x01(\x05R\aversion\x12<\n" +
 	"\x06server\x18\x02 \x01(\v2$.xray.common.protocol.ServerEndpointR\x06serverB[\n" +
-	"\x17com.xray.proxy.hysteriaP\x01Z(github.com/CassianoDev/Xray-core5/proxy/hysteria\xaa\x02\x13Xray.Proxy.Hysteriab\x06proto3"
+	"\x17com.xray.proxy.hysteriaP\x01Z(github.com/xtls/xray-core/proxy/hysteria\xaa\x02\x13Xray.Proxy.Hysteriab\x06proto3"
 
 var (
 	file_proxy_hysteria_config_proto_rawDescOnce sync.Once

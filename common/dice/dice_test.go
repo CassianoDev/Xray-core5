@@ -4,7 +4,7 @@ import (
 	"math/rand"
 	"testing"
 
-	. "github.com/CassianoDev/Xray-core5/common/dice"
+	. "github.com/xtls/xray-core/common/dice"
 )
 
 func BenchmarkRoll1(b *testing.B) {

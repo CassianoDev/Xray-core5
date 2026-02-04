@@ -4,7 +4,7 @@ import (
 	"container/list"
 	"sync"
 
-	"github.com/CassianoDev/Xray-core5/common/buf"
+	"github.com/xtls/xray-core/common/buf"
 )
 
 type SendingWindow struct {

@@ -3,14 +3,14 @@ package conf
 import (
 	"strings"
 
-	"github.com/CassianoDev/Xray-core5/app/commander"
-	loggerservice "github.com/CassianoDev/Xray-core5/app/log/command"
-	observatoryservice "github.com/CassianoDev/Xray-core5/app/observatory/command"
-	handlerservice "github.com/CassianoDev/Xray-core5/app/proxyman/command"
-	routerservice "github.com/CassianoDev/Xray-core5/app/router/command"
-	statsservice "github.com/CassianoDev/Xray-core5/app/stats/command"
-	"github.com/CassianoDev/Xray-core5/common/errors"
-	"github.com/CassianoDev/Xray-core5/common/serial"
+	"github.com/xtls/xray-core/app/commander"
+	loggerservice "github.com/xtls/xray-core/app/log/command"
+	observatoryservice "github.com/xtls/xray-core/app/observatory/command"
+	handlerservice "github.com/xtls/xray-core/app/proxyman/command"
+	routerservice "github.com/xtls/xray-core/app/router/command"
+	statsservice "github.com/xtls/xray-core/app/stats/command"
+	"github.com/xtls/xray-core/common/errors"
+	"github.com/xtls/xray-core/common/serial"
 )
 
 type APIConfig struct {

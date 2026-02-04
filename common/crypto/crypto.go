@@ -1,5 +1,5 @@
 // Package crypto provides common crypto libraries for Xray.
-package crypto // import "github.com/CassianoDev/Xray-core5/common/crypto"
+package crypto // import "github.com/xtls/xray-core/common/crypto"
 
 import (
 	"crypto/rand"

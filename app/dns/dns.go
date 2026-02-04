@@ -12,14 +12,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/CassianoDev/Xray-core5/app/router"
-	"github.com/CassianoDev/Xray-core5/common"
-	"github.com/CassianoDev/Xray-core5/common/errors"
-	"github.com/CassianoDev/Xray-core5/common/net"
-	"github.com/CassianoDev/Xray-core5/common/platform"
-	"github.com/CassianoDev/Xray-core5/common/session"
-	"github.com/CassianoDev/Xray-core5/common/strmatcher"
-	"github.com/CassianoDev/Xray-core5/features/dns"
+	"github.com/xtls/xray-core/app/router"
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/common/errors"
+	"github.com/xtls/xray-core/common/net"
+	"github.com/xtls/xray-core/common/platform"
+	"github.com/xtls/xray-core/common/session"
+	"github.com/xtls/xray-core/common/strmatcher"
+	"github.com/xtls/xray-core/features/dns"
 )
 
 // DNS is a DNS rely server.

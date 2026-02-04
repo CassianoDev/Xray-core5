@@ -7,11 +7,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/CassianoDev/Xray-core5/common"
-	"github.com/CassianoDev/Xray-core5/common/cache"
-	"github.com/CassianoDev/Xray-core5/common/errors"
-	"github.com/CassianoDev/Xray-core5/common/net"
-	"github.com/CassianoDev/Xray-core5/features/dns"
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/common/cache"
+	"github.com/xtls/xray-core/common/errors"
+	"github.com/xtls/xray-core/common/net"
+	"github.com/xtls/xray-core/features/dns"
 )
 
 type Holder struct {

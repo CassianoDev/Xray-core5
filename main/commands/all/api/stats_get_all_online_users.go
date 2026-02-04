@@ -1,8 +1,8 @@
 package api
 
 import (
-	statsService "github.com/CassianoDev/Xray-core5/app/stats/command"
-	"github.com/CassianoDev/Xray-core5/main/commands/base"
+	statsService "github.com/xtls/xray-core/app/stats/command"
+	"github.com/xtls/xray-core/main/commands/base"
 )
 
 var cmdGetAllOnlineUsers = &base.Command{

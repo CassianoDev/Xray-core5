@@ -3,9 +3,9 @@ package conf
 import (
 	"sort"
 
-	"github.com/CassianoDev/Xray-core5/common/errors"
-	"github.com/CassianoDev/Xray-core5/transport/internet/headers/http"
-	"github.com/CassianoDev/Xray-core5/transport/internet/headers/noop"
+	"github.com/xtls/xray-core/common/errors"
+	"github.com/xtls/xray-core/transport/internet/headers/http"
+	"github.com/xtls/xray-core/transport/internet/headers/noop"
 	"google.golang.org/protobuf/proto"
 )
 

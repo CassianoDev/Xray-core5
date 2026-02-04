@@ -4,11 +4,11 @@ import (
 	"context"
 	"io"
 
-	"github.com/CassianoDev/Xray-core5/common/errors"
-	creflect "github.com/CassianoDev/Xray-core5/common/reflect"
-	"github.com/CassianoDev/Xray-core5/core"
-	"github.com/CassianoDev/Xray-core5/infra/conf"
-	"github.com/CassianoDev/Xray-core5/main/confloader"
+	"github.com/xtls/xray-core/common/errors"
+	creflect "github.com/xtls/xray-core/common/reflect"
+	"github.com/xtls/xray-core/core"
+	"github.com/xtls/xray-core/infra/conf"
+	"github.com/xtls/xray-core/main/confloader"
 )
 
 func MergeConfigFromFiles(files []*core.ConfigSource) (string, error) {

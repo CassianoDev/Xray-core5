@@ -3,10 +3,10 @@ package conf
 import (
 	"google.golang.org/protobuf/proto"
 
-	"github.com/CassianoDev/Xray-core5/app/observatory"
-	"github.com/CassianoDev/Xray-core5/app/observatory/burst"
-	"github.com/CassianoDev/Xray-core5/common/errors"
-	"github.com/CassianoDev/Xray-core5/infra/conf/cfgcommon/duration"
+	"github.com/xtls/xray-core/app/observatory"
+	"github.com/xtls/xray-core/app/observatory/burst"
+	"github.com/xtls/xray-core/common/errors"
+	"github.com/xtls/xray-core/infra/conf/cfgcommon/duration"
 )
 
 type ObservatoryConfig struct {

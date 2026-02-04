@@ -12,16 +12,16 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/CassianoDev/Xray-core5/common"
-	"github.com/CassianoDev/Xray-core5/common/buf"
-	"github.com/CassianoDev/Xray-core5/common/net"
-	"github.com/CassianoDev/Xray-core5/common/protocol/tls/cert"
-	"github.com/CassianoDev/Xray-core5/testing/servers/tcp"
-	"github.com/CassianoDev/Xray-core5/testing/servers/udp"
-	"github.com/CassianoDev/Xray-core5/transport/internet"
-	. "github.com/CassianoDev/Xray-core5/transport/internet/splithttp"
-	"github.com/CassianoDev/Xray-core5/transport/internet/stat"
-	"github.com/CassianoDev/Xray-core5/transport/internet/tls"
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/common/buf"
+	"github.com/xtls/xray-core/common/net"
+	"github.com/xtls/xray-core/common/protocol/tls/cert"
+	"github.com/xtls/xray-core/testing/servers/tcp"
+	"github.com/xtls/xray-core/testing/servers/udp"
+	"github.com/xtls/xray-core/transport/internet"
+	. "github.com/xtls/xray-core/transport/internet/splithttp"
+	"github.com/xtls/xray-core/transport/internet/stat"
+	"github.com/xtls/xray-core/transport/internet/tls"
 )
 
 func Test_ListenXHAndDial(t *testing.T) {

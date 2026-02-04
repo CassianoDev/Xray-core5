@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/CassianoDev/Xray-core5/common/errors"
+	"github.com/xtls/xray-core/common/errors"
 )
 
 func FindProcess(dest Destination) (PID int, Name string, AbsolutePath string, err error) {

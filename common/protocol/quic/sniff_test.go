@@ -5,9 +5,9 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/CassianoDev/Xray-core5/common"
-	"github.com/CassianoDev/Xray-core5/common/protocol"
-	"github.com/CassianoDev/Xray-core5/common/protocol/quic"
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/common/protocol"
+	"github.com/xtls/xray-core/common/protocol/quic"
 )
 
 func TestSniffQUIC(t *testing.T) {

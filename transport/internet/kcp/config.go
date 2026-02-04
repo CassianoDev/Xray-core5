@@ -1,8 +1,8 @@
 package kcp
 
 import (
-	"github.com/CassianoDev/Xray-core5/common"
-	"github.com/CassianoDev/Xray-core5/transport/internet"
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/transport/internet"
 )
 
 // GetMTUValue returns the value of MTU settings.

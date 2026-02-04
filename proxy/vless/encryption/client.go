@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/CassianoDev/Xray-core5/common/errors"
-	"github.com/CassianoDev/Xray-core5/common/protocol"
+	"github.com/xtls/xray-core/common/errors"
+	"github.com/xtls/xray-core/common/protocol"
 	"lukechampine.com/blake3"
 )
 

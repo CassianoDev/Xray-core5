@@ -14,12 +14,12 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/CassianoDev/Xray-core5/common/cmdarg"
-	"github.com/CassianoDev/Xray-core5/common/errors"
-	clog "github.com/CassianoDev/Xray-core5/common/log"
-	"github.com/CassianoDev/Xray-core5/common/platform"
-	"github.com/CassianoDev/Xray-core5/core"
-	"github.com/CassianoDev/Xray-core5/main/commands/base"
+	"github.com/xtls/xray-core/common/cmdarg"
+	"github.com/xtls/xray-core/common/errors"
+	clog "github.com/xtls/xray-core/common/log"
+	"github.com/xtls/xray-core/common/platform"
+	"github.com/xtls/xray-core/core"
+	"github.com/xtls/xray-core/main/commands/base"
 )
 
 var cmdRun = &base.Command{

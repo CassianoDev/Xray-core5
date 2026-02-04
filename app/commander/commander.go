@@ -5,11 +5,11 @@ import (
 	"net"
 	"sync"
 
-	"github.com/CassianoDev/Xray-core5/common"
-	"github.com/CassianoDev/Xray-core5/common/errors"
-	"github.com/CassianoDev/Xray-core5/common/signal/done"
-	core "github.com/CassianoDev/Xray-core5/core"
-	"github.com/CassianoDev/Xray-core5/features/outbound"
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/common/errors"
+	"github.com/xtls/xray-core/common/signal/done"
+	core "github.com/xtls/xray-core/core"
+	"github.com/xtls/xray-core/features/outbound"
 	"google.golang.org/grpc"
 )
 

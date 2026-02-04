@@ -3,9 +3,9 @@ package inbound
 import (
 	"context"
 
-	"github.com/CassianoDev/Xray-core5/common"
-	"github.com/CassianoDev/Xray-core5/common/serial"
-	"github.com/CassianoDev/Xray-core5/features"
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/common/serial"
+	"github.com/xtls/xray-core/features"
 )
 
 // Handler is the interface for handlers that process inbound connections.
