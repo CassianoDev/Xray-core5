@@ -2,6 +2,7 @@ package tcp
 
 import (
 	"context"
+	gotls "crypto/tls"
 	"slices"
 	"strings"
 
@@ -15,10 +16,6 @@ import (
 	"github.com/xtls/xray-core/transport/internet/tls"
 )
 
-func IsFromMitm(str string) bool {
-	return strings.ToLower(str) == "frommitm"
-}
-
 // Dial dials a new TCP connection to the given destination.
 func Dial(ctx context.Context, dest net.Destination, streamSettings *internet.MemoryStreamConfig) (stat.Connection, error) {
 	errors.LogInfo(ctx, "dialing TCP to ", dest)
@@ -30,33 +27,36 @@ func Dial(ctx context.Context, dest net.Destination, streamSettings *internet.Me
 	if config := tls.ConfigFromStreamSettings(streamSettings); config != nil {
 		mitmServerName := session.MitmServerNameFromContext(ctx)
 		mitmAlpn11 := session.MitmAlpn11FromContext(ctx)
-		tlsConfig := config.GetTLSConfig(tls.WithDestination(dest))
-		if IsFromMitm(tlsConfig.ServerName) {
-			tlsConfig.ServerName = mitmServerName
+		var tlsConfig *gotls.Config
+		if tls.IsFromMitm(config.ServerName) {
+			tlsConfig = config.GetTLSConfig(tls.WithOverrideName(mitmServerName))
+		} else {
+			tlsConfig = config.GetTLSConfig(tls.WithDestination(dest))
 		}
+
 		isFromMitmVerify := false
-		if r, ok := tlsConfig.Rand.(*tls.RandCarrier); ok && len(r.VerifyPeerCertInNames) > 0 {
-			for i, name := range r.VerifyPeerCertInNames {
-				if IsFromMitm(name) {
+		if r, ok := tlsConfig.Rand.(*tls.RandCarrier); ok && len(r.VerifyPeerCertByName) > 0 {
+			for i, name := range r.VerifyPeerCertByName {
+				if tls.IsFromMitm(name) {
 					isFromMitmVerify = true
-					r.VerifyPeerCertInNames[0], r.VerifyPeerCertInNames[i] = r.VerifyPeerCertInNames[i], r.VerifyPeerCertInNames[0]
-					r.VerifyPeerCertInNames = r.VerifyPeerCertInNames[1:]
+					r.VerifyPeerCertByName[0], r.VerifyPeerCertByName[i] = r.VerifyPeerCertByName[i], r.VerifyPeerCertByName[0]
+					r.VerifyPeerCertByName = r.VerifyPeerCertByName[1:]
 					after := mitmServerName
 					for {
 						if len(after) > 0 {
-							r.VerifyPeerCertInNames = append(r.VerifyPeerCertInNames, after)
+							r.VerifyPeerCertByName = append(r.VerifyPeerCertByName, after)
 						}
 						_, after, _ = strings.Cut(after, ".")
 						if !strings.Contains(after, ".") {
 							break
 						}
 					}
-					slices.Reverse(r.VerifyPeerCertInNames)
+					slices.Reverse(r.VerifyPeerCertByName)
 					break
 				}
 			}
 		}
-		isFromMitmAlpn := len(tlsConfig.NextProtos) == 1 && IsFromMitm(tlsConfig.NextProtos[0])
+		isFromMitmAlpn := len(tlsConfig.NextProtos) == 1 && tls.IsFromMitm(tlsConfig.NextProtos[0])
 		if isFromMitmAlpn {
 			if mitmAlpn11 {
 				tlsConfig.NextProtos[0] = "http/1.1"
